@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+    <style>
+        .container {
+  width: 500px; 
+  margin: 0 auto;
+}
+.upper-title{
+  position: relative; 
+  margin: 0 0 -10px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #E25B83;
+  overflow: hidden;
+}
+.upper-title > span:after{
+  content: "";
+  position: absolute;
+  top: 55%;
+  height: 1px;
+  width: 100%;
+  margin-left: 10px; 
+  background: #E4CFD4;
+}
+.lower-title {
+  font-size: 10px;
+  color: #808080;
+}
+.black-background {
+  padding: 10px;
+  background: #181818;
+  color: #FFFFFF;
+}
+.color-red {
+  color: #E25B83;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-title">
+          <p class="upper-title"><span>The Path to Enlightenment<span></p>   
+          <p class="lower-title">These instructions are for *nix platforms. We also have <a href="#" class="color-red">Windows instructions</a>.</p>
+        </div>
+        
+        <p>You can run the tests by calling the path.to.enlightenment.rb file </p>
+        <p>In your terminal, while in the ruby, koans directory, type: </p>
+        <p class="black-background">[ ruby_koans ] $ ruby path_to_enlightement.rb</p>
+        <h3 class="color-red">Red, Green, Refactor</h3>
+        <p>In test-driven development (TDD) the mantra has always benn red: write a failing test and run it: green: make the test pass, and refactor: look at the code and see if you can make it even better</p>
+      </div>
+</body>
+</html>
