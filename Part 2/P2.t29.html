@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29</title>
+    <style>
+body {
+    font-size: 12px;
+    font-family: sans;
+}
+nav {
+    width: 200px;
+    margin: 30px auto;
+    padding: 0px 10px;
+    border: 1px solid black;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-menu > li{
+  border-bottom: 1px solid #BABABA;
+}
+.submenu {
+    width: 180px;
+    margin-top: 3px;
+	margin-left: 5px;
+	padding-bottom: 6px;
+	display: none; 
+}
+.submenu a::before {
+    content: "";
+	border: 4px solid transparent;
+    border-left: 4px solid black;
+	width: 0;
+    height: 0;
+	display: block;
+	position:relative;
+	top:10px;
+	left:-7px;
+}
+.submenu li {
+    position: relative;
+}
+a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 0;
+}
+ a:hover{
+  color: #797E94;
+  text-decoration: underline;
+}
+.submenu a {
+  padding: 3px;
+}
+.slide {
+  display: none;
+  margin-left: 10px;
+}
+.slide a::before {
+  display: none;
+} 
+input {
+	display: none;
+}
+input:checked ~ .submenu {
+  display: block;
+}
+input:checked ~ .slide {
+  display: block;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="main-menu">
+			<li><a href="#">Научное наследие</a></li>
+			<li class="active">
+                <input type="checkbox" id="active" checked>
+                <a href="#">
+                <label for="active">Теория</label></a>
+			<ul class="submenu">
+				<li><input type="checkbox" id="box_1">
+				<a href="#">
+                <label for="box_1">Отдельные издания</label></a>
+			    	<ul class="slide">
+			    		<li><a href="#">Издание 1</a></li>
+			    		<li><a href="#">Издание 2</a></li>
+			    		<li><a href="#">Издание 3</a></li>
+			    	</ul>
+			    	</li>
+					<li><input type="checkbox" id="box_2"><a href="#"><label for="box_2">Труды РАО</label></a>
+			    	<ul class="slide">
+			    		<li><a href="#">Труд 1</a></li>
+			    		<li><a href="#">Труд 2</a></li>
+			    		<li><a href="#">Труд 3</a></li>
+			    	</ul>
+			    	</a></li>
+			<li><input type="checkbox" id="box_3"><a href="#"><label for="box_3">Диссертиционные материалы</label></a>
+			    	<ul class="slide">
+			    		<li><a href="#">Материал 1</a></li>
+			    		<li><a href="#">Материал 2</a></li>
+			    		<li><a href="#">Материал 3</a></li>
+			    	</ul>
+			    	</li>
+			    </ul>
+			</li>
+			<li><a href="#">Практика</a></li>
+			<li><a href="#">История</a></li>
+			<li><a href="#">Периодические издания</a></li>
+			<li><a href="#">Справочные материалы</a></li>
+			<li><a href="#">Библиография</a></li>
+			<li><a href="#">Материалы научно-практических мероприятий</a></li>
+		</ul>
+    </nav>
+</body>
+</html>
